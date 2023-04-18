@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美国gdp直方图</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <style>
+        h4 {
+            display: block;
+            margin: 80px auto;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        svg {
+            display: block;
+            margin: 0 auto;
+            /* background-color: pink; */
+        }
+
+        .bar:hover {
+            fill: #ffffff;
+        }
+
+        .vis {
+            display: block;
+            margin: 60px auto;
+            width: 2000px;
+            height: 1000px;
+            position: relative;
+        }
+
+        .detail {
+            padding: 15px 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            top: 600px;
+            left: 100px;
+            width: 150px;
+            height: 50px;
+            background-color: #ffffff;
+            opacity: 0;
+            box-shadow: 1px 1px 10px 3px rgba(3, 3, 3, 0.9);
+        }
+
+        p {
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h4>United States GDP</h4>
+    <div class="vis"></div>
+    <script src="./chart.js"></script>
+</body>
+</html>
